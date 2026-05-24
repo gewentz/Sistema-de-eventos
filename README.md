@@ -27,15 +27,19 @@ Um sistema simples e funcional de Gerenciamento de Eventos desenvolvido em PHP P
 
 ### 1. Autenticação de Usuários
 *   **Cadastro (`/register`)**: Permite que novos usuários criem uma conta informando nome, e-mail e senha. As senhas são criptografadas.
+![Registro](https://i.imgur.com/xnfcjtD.png)
 *   **Login (`/login`)**: Verifica as credenciais no banco de dados e inicia uma sessão PHP.
+![Login](https://i.imgur.com/wOn08hl.png)
 *   **Logout (`/logout`)**: Encerra a sessão ativa e redireciona para a tela de login.
 
 ### 2. Dashboard de Eventos (`/dashboard`)
+![Dashboard](https://i.imgur.com/sauAe63.png)
 O dashboard agora é dividido em duas seções principais:
 *   **Meus Eventos**: Lista exclusiva dos eventos criados pelo usuário logado, com permissões completas de edição e exclusão.
 *   **Todos os Eventos**: Uma lista global que exibe todos os eventos cadastrados no sistema por qualquer usuário, incluindo o nome do organizador.
 
 ### 3. Gestão de Eventos (CRUD)
+![Criação de eventos](https://i.imgur.com/f1ujlt2.png)
 *   **Criar Evento (`/events/create`)**: Formulário para inserção de título, descrição e data/hora, associando o evento ao usuário logado.
 *   **Editar Evento (`/events/edit/{id}`)**: Permite modificar eventos de propriedade do usuário. O sistema valida a propriedade antes de processar a alteração.
 *   **Excluir Evento (`/events/delete/{id}`)**: Remove eventos de propriedade do usuário após confirmação.
